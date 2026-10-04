@@ -1,0 +1,109 @@
+{
+  "blender_version": "5.2.2 LTS",
+  "units": "meters",
+  "site_dimensions_m": [
+    560,
+    420
+  ],
+  "context_building_count": 18,
+  "surrounding_house_count": 49,
+  "sports_grounds": 2,
+  "main_gate": "中门（按用户提供手绘地图做示意定位）",
+  "building_roots": [
+    {
+      "id": "hbpu-teaching-d",
+      "name": "示意教学楼 D",
+      "floors": 6,
+      "dimensions_m": [
+        34,
+        24,
+        21.0
+      ]
+    },
+    {
+      "id": "hbpu-teaching-e",
+      "name": "示意教学楼 E",
+      "floors": 7,
+      "dimensions_m": [
+        32,
+        25,
+        24.5
+      ]
+    },
+    {
+      "id": "hbpu-teaching-f",
+      "name": "示意教学楼 F",
+      "floors": 6,
+      "dimensions_m": [
+        34,
+        24,
+        21.0
+      ]
+    },
+    {
+      "id": "hbpu-teaching-g",
+      "name": "示意教学楼 G",
+      "floors": 6,
+      "dimensions_m": [
+        34,
+        24,
+        21.0
+      ]
+    },
+    {
+      "id": "hbpu-teaching-h",
+      "name": "示意教学楼 H",
+      "floors": 7,
+      "dimensions_m": [
+        32,
+        24,
+        24.5
+      ]
+    },
+    {
+      "id": "hbpu-teaching-i",
+      "name": "示意教学楼 I",
+      "floors": 5,
+      "dimensions_m": [
+        36,
+        25,
+        17.5
+      ]
+    },
+    {
+      "id": "hbpu-teaching-a",
+      "name": "示意教学楼 A",
+      "floors": 6,
+      "dimensions_m": [
+        48,
+        28,
+        27
+      ]
+    },
+    {
+      "id": "hbpu-teaching-b",
+      "name": "示意教学楼 B",
+      "floors": 7,
+      "dimensions_m": [
+        38,
+        25,
+        30
+      ]
+    },
+    {
+      "id": "hbpu-teaching-c",
+      "name": "示意教学楼 C",
+      "floors": 3,
+      "dimensions_m": [
+        52,
+        21,
+        16
+      ]
+    }
+  ],
+  "mesh_objects": 97,
+  "materials": 51,
+  "triangles": 589900,
+  "glb_bytes": 13265188,
+  "render": "D:\\AI工具Codex项目\\建模\\campus-demo\\renders\\campus-overview.png"
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#071827" />
+    <link rel="icon" href="data:," />
+    <title>某大学 · 数字校园原型</title>
+  </head>
+  <body>
+    <main class="application" id="application">
+      <canvas id="scene" aria-label="可交互的校园三维场景"></canvas>
+      <div class="scene-wash"></div>
+
+      <header class="topbar glass-panel">
+        <a class="brand" href="#" aria-label="某大学数字校园总览">
+          <span class="brand-mark"><i data-lucide="landmark"></i></span>
+          <span><strong>某大学</strong><small>DIGITAL CAMPUS / 01</small></span>
+        </a>
+        <div class="top-title"><strong>智慧校园空间可视化系统</strong><span>SMART CAMPUS · 3D DIGITAL TWIN DEMO</span></div>
+        <div class="top-meta"><span class="live-dot"></span><span>校园空间总览</span><span class="meta-divider"></span><span>LOCAL DEMO</span></div>
+        <button class="icon-button menu-toggle" id="menuToggle" type="button" aria-label="打开楼栋列表" title="楼栋列表"><i data-lucide="panel-left"></i></button>
+      </header>
+
+      <aside class="building-panel glass-panel" id="buildingPanel">
+        <div class="panel-heading"><div><span class="eyebrow">CAMPUS INDEX / SCHEMATIC</span><h1>全校园建筑总览</h1></div><span class="count"><b id="campusBuildingCount">21</b><i></i></span></div>
+        <div class="section-rule"><span>重点教学楼</span><span id="teachingCount">09 NODES</span></div>
+        <nav class="building-list" id="buildingList" aria-label="教学楼列表"></nav>
+        <div class="panel-foot"><span class="status-ring"></span><span>场景模型已加载</span><span class="foot-size">LOCAL COORDS</span></div>
+      </aside>
+
+      <aside class="detail-panel glass-panel mobile-hidden" id="detailPanel">
+        <div class="detail-top"><span class="eyebrow">ASSET PROFILE / <b id="buildingIndex">01</b></span><button class="icon-button close-detail" id="closeDetail" type="button" aria-label="关闭建筑信息"><i data-lucide="x"></i></button></div>
+        <div class="detail-title"><span class="building-symbol"><i data-lucide="building-2"></i></span><div><h2 id="buildingName">教学楼 A</h2><p id="buildingType">教学建筑 · 外观模型</p></div></div>
+        <div class="data-state"><i data-lucide="badge-info"></i><span>建筑参数为演示估算</span></div>
+        <div class="detail-rule"></div>
+        <div class="metric-grid">
+          <div class="metric"><span>建筑层数</span><strong><b id="floorCount">6</b><small>F</small></strong><em>参考影像估算</em></div>
+          <div class="metric"><span>模型尺寸</span><strong id="dimensions">48 × 28 m</strong><em>长 × 宽 · 估算</em></div>
+        </div>
+        <div class="profile-row"><span>建筑用途</span><strong>教学与学习空间</strong></div>
+        <div class="profile-row"><span>资料状态</span><strong><i class="amber-dot"></i>待现场核对</strong></div>
+        <div class="chart-heading"><span>空间信息覆盖度</span><span>演示指标</span></div>
+        <div class="chart-wrap"><div id="coverageChart" aria-label="空间信息覆盖度演示图表"></div><div class="chart-center"><strong>42<small>%</small></strong><span>DEMO</span></div></div>
+        <button class="locate-button" id="locateBuilding" type="button"><i data-lucide="locate-fixed"></i><span>定位此楼</span><i data-lucide="arrow-up-right"></i></button>
+        <p class="source-note">外观参考学校公开校园照片；建筑名称、尺寸和坐标尚未测绘。</p>
+      </aside>
+
+      <div class="scene-caption"><span class="caption-line"></span><span>UNIVERSITY CAMPUS / CAMPUS OVERVIEW</span><span class="caption-coords">LOCAL XYZ · METERS</span></div>
+      <div class="landmark-label" id="gatePlazaLabel" data-position="0,4,136"><span class="label-pin"></span><span class="label-text"><b>中门广场</b><small>MAIN CAMPUS GATE · 示意定位</small></span></div>
+      <div class="landmark-label" data-position="-242,4,80"><span class="label-pin"></span><span class="label-text"><b>西门</b><small>WEST GATE · 示意定位</small></span></div>
+      <div class="landmark-label" data-position="242,4,53"><span class="label-pin"></span><span class="label-text"><b>东门</b><small>EAST GATE · 示意定位</small></span></div>
+
+      <div class="scene-tools glass-panel" aria-label="场景控制">
+        <button class="tool-button active" id="overviewButton" type="button" title="总览" aria-label="恢复总览"><i data-lucide="focus"></i><span>总览</span></button>
+        <span class="tool-separator"></span>
+        <button class="tool-button" id="autoRotateButton" type="button" title="自动旋转" aria-label="切换自动旋转"><i data-lucide="rotate-3d"></i><span>环绕</span></button>
+        <button class="tool-button is-on" id="labelsButton" type="button" title="显示或隐藏标签" aria-label="切换楼栋标签"><i data-lucide="tags"></i><span>标签</span></button>
+        <span class="tool-separator"></span>
+        <button class="icon-button" id="fullscreenButton" type="button" title="全屏" aria-label="进入全屏"><i data-lucide="maximize"></i></button>
+      </div>
+
+      <div class="loading-state" id="loadingState"><span class="loader"></span><strong>正在载入校园场景</strong><span id="loadingHint">连接本地三维模型…</span><button id="retryLoad" type="button" hidden>重新加载</button></div>
+      <div class="toast" id="toast" role="status"></div>
+      <div class="mobile-scrim" id="mobileScrim"></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+{
+  "campus": "某大学",
+  "coordinateSystem": "local-meter-demo",
+  "campusOverview": {
+    "totalBuildingMasses": 21,
+    "namedTeachingBuildings": 9,
+    "centralGatePlaza": "中门广场",
+    "layoutStatus": "hand-drawn campus map interpreted as north-up; positions and dimensions are schematic, not survey verified",
+    "mapLandmarks": ["中门广场", "东门", "西门", "西侧运动场", "东侧运动场"]
+  },
+  "buildings": [
+    {
+      "id": "hbpu-teaching-a",
+      "name": "教学楼 A",
+      "index": "01",
+      "category": "教学建筑",
+      "floors": 6,
+      "dimensions": [48, 28, 27],
+      "position": [-34, 20, 0],
+      "reference": "hbpu-campus-01.jpg",
+      "summary": "浅色教学体量、红色遮阳楼梯塔、玻璃低体量与连廊。"
+    },
+    {
+      "id": "hbpu-teaching-b",
+      "name": "教学楼 B",
+      "index": "02",
+      "category": "教学建筑",
+      "floors": 7,
+      "dimensions": [38, 25, 30],
+      "position": [34, 19, 0],
+      "reference": "hbpu-campus-02.jpg",
+      "summary": "黄褐色立面、中央玻璃区域与两侧教学翼。"
+    },
+    {
+      "id": "hbpu-teaching-c",
+      "name": "教学楼 C",
+      "index": "03",
+      "category": "教学建筑",
+      "floors": 3,
+      "dimensions": [52, 21, 16],
+      "position": [-5, -28, 0],
+      "reference": "hbpu-campus-08.jpg",
+      "summary": "红砖色低层体量、白色外框与玻璃端部。"
+    },
+    {
+      "id": "hbpu-teaching-d",
+      "name": "示意教学楼 D",
+      "index": "04",
+      "category": "外围教学建筑",
+      "floors": 6,
+      "dimensions": [34, 24, 21],
+      "position": [-195, 45, 0],
+      "summary": "外围教学楼体量示意；位置、楼层与立面待现场核对。"
+    },
+    {
+      "id": "hbpu-teaching-e",
+      "name": "示意教学楼 E",
+      "index": "05",
+      "category": "外围教学建筑",
+      "floors": 7,
+      "dimensions": [32, 25, 24.5],
+      "position": [-160, -10, 0],
+      "summary": "外围教学楼体量示意；位置、楼层与立面待现场核对。"
+    },
+    {
+      "id": "hbpu-teaching-f",
+      "name": "示意教学楼 F",
+      "index": "06",
+      "category": "外围教学建筑",
+      "floors": 6,
+      "dimensions": [34, 24, 21],
+      "position": [-123, 48, 0],
+      "summary": "外围教学楼体量示意；位置、楼层与立面待现场核对。"
+    },
+    {
+      "id": "hbpu-teaching-g",
+      "name": "示意教学楼 G",
+      "index": "07",
+      "category": "外围教学建筑",
+      "floors": 6,
+      "dimensions": [34, 24, 21],
+      "position": [82, 65, 0],
+      "summary": "北侧教学楼体量示意；位置、楼层与立面待现场核对。"
+    },
+    {
+      "id": "hbpu-teaching-h",
+      "name": "示意教学楼 H",
+      "index": "08",
+      "category": "外围教学建筑",
+      "floors": 7,
+      "dimensions": [32, 24, 24.5],
+      "position": [132, 58, 0],
+      "summary": "北侧教学楼体量示意；位置、楼层与立面待现场核对。"
+    },
+    {
+      "id": "hbpu-teaching-i",
+      "name": "示意教学楼 I",
+      "index": "09",
+      "category": "外围教学建筑",
+      "floors": 5,
+      "dimensions": [36, 25, 17.5],
+      "position": [181, 8, 0],
+      "summary": "北侧教学楼体量示意；位置、楼层与立面待现场核对。"
+    }
+  ],
+  "dataNotice": "三栋中心教学楼依据公开校园影像做外观参考；新增外围教学楼为整体布局示意。全部名称、尺寸、楼层与坐标均须现场核对。"
+}

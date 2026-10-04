@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.blend1
+research/browser-profile/
+blender/
+docs/
+references/
+renders/
+public/models/*.blend
+tools/
+
+# Tencent Cloud EdgeOne
+.env
+.edgeone/*
+.tef_dist/*
+  
